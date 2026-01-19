@@ -35,9 +35,7 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <Logo variant="dark" className="mb-6" />
             <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-sm mt-8">
-              Purveyors of exceptional jewellery since 1892. 
-              Each piece crafted with precision, passion, and an unwavering 
-              commitment to timeless elegance.
+              Jewelry with intention—personal, feminine, and deeply connected to the stories and heirlooms of the women who wear it.
             </p>
           </div>
 

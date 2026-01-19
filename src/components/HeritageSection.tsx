@@ -48,7 +48,7 @@ export const HeritageSection = () => {
                 transition={{ duration: 0.8 }}
                 className="subheading-luxury text-quicksand block mb-6"
               >
-                Since 1892
+                Founded in 2023
               </motion.span>
 
               <motion.h2
@@ -57,9 +57,9 @@ export const HeritageSection = () => {
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className="heading-display text-swan-wing mb-8"
               >
-                A Legacy of
+                A Legacy
                 <br />
-                <span className="text-quicksand">Craftsmanship</span>
+                <span className="text-quicksand">Reimagined</span>
               </motion.h2>
 
               <motion.div
@@ -75,9 +75,7 @@ export const HeritageSection = () => {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="body-elegant text-shell-stone mb-8"
               >
-                Four generations of master jewellers have refined our art. 
-                Each piece is born from patience, precision, and an intimate 
-                understanding of materials that only decades of dedication can bring.
+                Inspired by her grandmother and mother, Sumayah learned that jewelry is a daily expression of femininity and self-respect. A gift of red rubies from her father sparked our signature concept, <em>Blood of My Blood</em>: inviting you to bring heirlooms, gemstones, and family treasures to be redesigned into new symbols you can wear every day.
               </motion.p>
 
               <motion.div

@@ -58,7 +58,7 @@ export const HeroSection = () => {
           transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="heading-hero text-swan-wing max-w-4xl"
         >
-          Eternal Elegance
+          Wear Your Story
         </motion.h1>
 
         <motion.p
@@ -67,7 +67,7 @@ export const HeroSection = () => {
           transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mt-6 subheading-luxury text-shell-stone max-w-xl"
         >
-          Crafted for those who understand that true luxury is timeless
+          Jewelry with intention—crafted from personal stories, heirlooms, and the women who wear them.
         </motion.p>
 
         {/* Scroll Indicator */}

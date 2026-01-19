@@ -57,11 +57,14 @@ export default function Story() {
             transition={{ duration: 0.8 }}
             className="prose prose-lg mx-auto text-center"
           >
-            <p className="body-elegant text-muted-foreground leading-relaxed mb-12">
-              Founded in the heart of London in 1892, Le. Bijoux began as a small atelier 
-              where master craftsman Henri Laurent first combined his passion for precious 
-              stones with an unwavering commitment to perfection. What started as a single 
-              workshop has evolved into a legacy spanning four generations.
+            <p className="body-elegant text-muted-foreground leading-relaxed">
+              Founded in 2023, Le.Bijoux is an emotional, creative journey where every piece is infused with intention, memory, and meaning. It began the day Sumayah realized that the joy she found customizing her own jewelry could become a space for other women to wear their stories.
+            </p>
+            <p className="body-elegant text-muted-foreground leading-relaxed">
+              The name “Le.Bijoux” is universal—a shared language for “jewel”—chosen for its elegant sound and the feeling it evokes: luxurious and poised. Inspired by her grandmother and mother, who taught her that jewelry is a daily ritual of femininity and self-respect, Sumayah believes a woman should always keep a piece of beauty close, even at home.
+            </p>
+            <p className="body-elegant text-muted-foreground leading-relaxed mb-0">
+              Today, Le.Bijoux stands for femininity with strength: personal adornments crafted to honor who you are and who you are becoming.
             </p>
           </motion.div>
 
@@ -89,18 +92,15 @@ export default function Story() {
             transition={{ duration: 0.8 }}
             className="prose prose-lg mx-auto"
           >
-            <h2 className="heading-section text-foreground text-center mb-8">The Philosophy</h2>
+            <h2 className="heading-section text-foreground text-center mb-8">Designing with Emotion</h2>
             <p className="body-elegant text-muted-foreground leading-relaxed mb-8">
-              We believe that true luxury cannot be rushed. Each piece in our collection 
-              is the result of hundreds of hours of meticulous work—from the careful 
-              selection of ethically sourced gemstones to the final polish that reveals 
-              the soul of the creation.
+              Known to clients as a “jewelry therapist,” Sumayah designs with the psychology of jewelry—using color, words, and symbolism to capture how you want to feel. Each collection is guided by a curated calendar of themes such as love, rebirth, courage, and legacy.
             </p>
             <p className="body-elegant text-muted-foreground leading-relaxed mb-8">
-              Our artisans inherit techniques passed down through generations, yet they 
-              also embrace innovation. This balance between tradition and modernity 
-              defines our aesthetic: pieces that feel both timeless and contemporary, 
-              rooted in heritage yet speaking to the present.
+              The process is deeply personal: from listening to your story, sketching by hand, and studying craftsmanship worldwide, to the moment you see your piece and recognize yourself in it. This is jewelry with intention—crafted to be worn every day, not kept in a box.
+            </p>
+            <p className="body-elegant text-muted-foreground leading-relaxed mb-0">
+              Sustainable luxury is our standard. We favor meaning over excess, encouraging clients to reuse, redesign, and revive what already holds history.
             </p>
           </motion.div>
 
@@ -128,17 +128,48 @@ export default function Story() {
             transition={{ duration: 0.8 }}
             className="prose prose-lg mx-auto"
           >
-            <h2 className="heading-section text-foreground text-center mb-8">Our Promise</h2>
-            <p className="body-elegant text-muted-foreground leading-relaxed mb-8">
-              When you choose Le. Bijoux, you choose more than jewellery. You choose 
-              a commitment to excellence that has been refined over more than a century. 
-              You choose pieces that will be treasured for generations, just as our 
-              craft has been.
-            </p>
-            <p className="body-elegant text-muted-foreground leading-relaxed mb-12">
-              Every creation that leaves our atelier carries with it the weight of our 
-              history and the promise of our future. This is the Le. Bijoux difference.
-            </p>
+            <h2 className="heading-section text-foreground text-center mb-8">What We Stand For</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+              <div className="bg-shell-stone/20 border border-shell-stone/50 p-8">
+                <h3 className="text-lg font-display font-light tracking-elegant text-foreground mb-4">
+                  Brand Values
+                </h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li>Femininity with strength: beauty as a daily ritual of confidence.</li>
+                  <li>Emotional connection: pieces that hold memory, feeling, and intention.</li>
+                  <li>Personalization: color, words, and symbols tailored to your story.</li>
+                  <li>Heritage & legacy: heirlooms reimagined to honor those who came before.</li>
+                  <li>Sustainable luxury: reuse, redesign, and revive over excess.</li>
+                </ul>
+              </div>
+
+              <div className="bg-ebony-clay/80 text-shell-stone border border-ebony-clay/40 p-8">
+                <h3 className="text-lg font-display font-light tracking-elegant text-swan-wing mb-4">
+                  Blood of My Blood
+                </h3>
+                <p className="body-elegant text-shell-stone/80 leading-relaxed mb-4">
+                  Born from the ruby stones gifted by Sumayah’s father, this signature collection invites you to bring in heirlooms, gemstones, or family treasures to be redesigned, reset, or reimagined into modern keepsakes.
+                </p>
+                <p className="body-elegant text-shell-stone/70 leading-relaxed mb-0">
+                  It is how we carry forward the stories, love, and energy of those who came before us—turning generational memories into pieces you can wear every day.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-shell-stone/40 border border-shell-stone/60 p-8 md:p-10">
+              <h3 className="text-lg font-display font-light tracking-elegant text-foreground mb-4">
+                Brand Manifesto
+              </h3>
+              <div className="space-y-3 text-muted-foreground">
+                <p>Jewelry is emotion made visible.</p>
+                <p>Femininity is power—soft, elegant, intentional.</p>
+                <p>Every stone can hold a story; every symbol can anchor a feeling.</p>
+                <p>We honor lineage by reimagining heirlooms for the women of today.</p>
+                <p>We create with care, not excess. Meaning before more.</p>
+                <p>At Le.Bijoux, we design the feeling you want to live in. Wear your story.</p>
+              </div>
+            </div>
           </motion.div>
 
           {/* Back to Home CTA */}
