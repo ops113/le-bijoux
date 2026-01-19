@@ -1,83 +1,31 @@
+import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { collectionItems, getImagesForSlug } from "@/lib/collections";
 
-// Import all jewelry images
-import ringTourmaline from "@/assets/ring-tourmaline.jpg";
-import ringSapphire from "@/assets/ring-sapphire.jpg";
-import necklaceMarquise from "@/assets/necklace-marquise.jpg";
-import necklaceTanzanite from "@/assets/necklace-tanzanite.jpg";
-import earringsCluster from "@/assets/earrings-cluster.jpg";
-import earringsEmerald from "@/assets/earrings-emerald.jpg";
-import earringSapphire from "@/assets/earring-sapphire.jpg";
-import necklacePearSapphire from "@/assets/necklace-pear-sapphire.jpg";
-import necklaceButterfly from "@/assets/necklace-butterfly.jpg";
-import necklaceButterfly2 from "@/assets/necklace-butterfly-2.jpg";
-
-const collections = [
-  {
-    id: 1,
-    name: "Tourmaline Dream",
-    category: "Rings",
-    image: ringTourmaline,
-  },
-  {
-    id: 2,
-    name: "Sapphire Eternity",
-    category: "Rings",
-    image: ringSapphire,
-  },
-  {
-    id: 3,
-    name: "Marquise Solitaire",
-    category: "Necklaces",
-    image: necklaceMarquise,
-  },
-  {
-    id: 4,
-    name: "Tanzanite Pendant",
-    category: "Necklaces",
-    image: necklaceTanzanite,
-  },
-  {
-    id: 5,
-    name: "Cluster Florals",
-    category: "Earrings",
-    image: earringsCluster,
-  },
-  {
-    id: 6,
-    name: "Emerald Studs",
-    category: "Earrings",
-    image: earringsEmerald,
-  },
-  {
-    id: 7,
-    name: "Sapphire Art Deco",
-    category: "Earrings",
-    image: earringSapphire,
-  },
-  {
-    id: 8,
-    name: "Pear Sapphire Drop",
-    category: "Necklaces",
-    image: necklacePearSapphire,
-  },
-  {
-    id: 9,
-    name: "Butterfly Grace",
-    category: "Necklaces",
-    image: necklaceButterfly,
-  },
-  {
-    id: 10,
-    name: "Butterfly Whisper",
-    category: "Necklaces",
-    image: necklaceButterfly2,
-  },
-];
+type GalleryItem = (typeof collectionItems)[number] & { images: string[] };
 
 export default function Collection() {
+  const collections = useMemo<GalleryItem[]>(() => {
+    return collectionItems
+      .map((item) => ({
+        ...item,
+        images: getImagesForSlug(item.slug),
+      }))
+      .filter((item) => item.images.length > 0);
+  }, []);
+
+  const [selected, setSelected] = useState<GalleryItem | null>(null);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Back Button */}
@@ -136,11 +84,15 @@ export default function Collection() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="group cursor-pointer"
+                onClick={() => setSelected(item)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === "Enter" && setSelected(item)}
               >
                 {/* Image Container */}
                 <div className="image-luxury aspect-[3/4] mb-6 bg-shell-stone">
                   <img
-                    src={item.image}
+                    src={item.images[0]}
                     alt={`${item.name} - ${item.category}`}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -177,6 +129,42 @@ export default function Collection() {
           </motion.div>
         </div>
       </section>
+
+      {/* Lightbox for collection items */}
+      <Dialog open={!!selected} onOpenChange={(open) => !open && setSelected(null)}>
+        <DialogContent className="max-w-6xl p-0 overflow-hidden bg-ebony-clay text-swan-wing">
+          {selected && (
+            <div className="grid md:grid-cols-2">
+              <div className="relative bg-ebony-clay">
+                <Carousel className="w-full" opts={{ loop: true }}>
+                  <CarouselContent>
+                    {selected.images.map((src, idx) => (
+                      <CarouselItem key={src} className="basis-full">
+                        <div className="aspect-[3/4] bg-ebony-clay">
+                          <img
+                            src={src}
+                            alt={`${selected.name} view ${idx + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4 bg-swan-wing/80 text-foreground hover:bg-swan-wing" />
+                  <CarouselNext className="right-4 bg-swan-wing/80 text-foreground hover:bg-swan-wing" />
+                </Carousel>
+              </div>
+              <div className="p-8 md:p-10 flex flex-col justify-center gap-4">
+                <span className="subheading-luxury text-quicksand">{selected.category}</span>
+                <h3 className="heading-section text-swan-wing">{selected.name}</h3>
+                <p className="body-elegant text-shell-stone/70">
+                  Explore every angle and setting variation. Tap or click through the gallery to view the complete piece.
+                </p>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
