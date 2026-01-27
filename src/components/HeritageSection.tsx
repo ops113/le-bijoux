@@ -1,7 +1,7 @@
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import heritageImage from "@/assets/earring-sapphire.jpg";
+import heritageImage from "@/assets/earrings-emerald - 2.jpg";
 
 export const HeritageSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
