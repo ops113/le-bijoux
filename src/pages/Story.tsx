@@ -29,7 +29,7 @@ export default function Story() {
         <div className="absolute inset-0">
           <img
             src={ringTourmaline}
-            alt="Le. Bijoux heritage"
+            alt="Sumayah Marafi heritage"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ebony-clay/70 via-ebony-clay/50 to-background" />
@@ -58,13 +58,13 @@ export default function Story() {
             className="prose prose-lg mx-auto text-center"
           >
             <p className="body-elegant text-muted-foreground leading-relaxed">
-              Founded in 2023, Le.Bijoux is an emotional, creative journey where every piece is infused with intention, memory, and meaning. It began the day Sumayah realized that the joy she found customizing her own jewelry could become a space for other women to wear their stories.
+              Founded in 2023, Sumayah Marafi is an emotional, creative journey where every piece is infused with intention, memory, and meaning. It began the day Sumayah realized that the joy she found customizing her own jewelry could become a space for other women to wear their stories.
             </p>
             <p className="body-elegant text-muted-foreground leading-relaxed">
-              The name “Le.Bijoux” is universal—a shared language for “jewel”—chosen for its elegant sound and the feeling it evokes: luxurious and poised. Inspired by her grandmother and mother, who taught her that jewelry is a daily ritual of femininity and self-respect, Sumayah believes a woman should always keep a piece of beauty close, even at home.
+              The name “Sumayah Marafi” is universal—a shared language for “jewel”—chosen for its elegant sound and the feeling it evokes: luxurious and poised. Inspired by her grandmother and mother, who taught her that jewelry is a daily ritual of femininity and self-respect, Sumayah believes a woman should always keep a piece of beauty close, even at home.
             </p>
             <p className="body-elegant text-muted-foreground leading-relaxed mb-0">
-              Today, Le.Bijoux stands for femininity with strength: personal adornments crafted to honor who you are and who you are becoming.
+              Today, Sumayah Marafi stands for femininity with strength: personal adornments crafted to honor who you are and who you are becoming.
             </p>
           </motion.div>
 
@@ -79,7 +79,7 @@ export default function Story() {
             <div className="image-luxury aspect-[16/9]">
               <img
                 src={necklaceTanzanite}
-                alt="Le. Bijoux craftsmanship"
+                alt="Sumayah Marafi craftsmanship"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -115,7 +115,7 @@ export default function Story() {
             <div className="image-luxury aspect-square max-w-2xl mx-auto">
               <img
                 src={earringsCluster}
-                alt="Le. Bijoux artistry"
+                alt="Sumayah Marafi artistry"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -167,7 +167,7 @@ export default function Story() {
                 <p>Every stone can hold a story; every symbol can anchor a feeling.</p>
                 <p>We honor lineage by reimagining heirlooms for the women of today.</p>
                 <p>We create with care, not excess. Meaning before more.</p>
-                <p>At Le.Bijoux, we design the feeling you want to live in. Wear your story.</p>
+                <p>At Sumayah Marafi, we design the feeling you want to live in. Wear your story.</p>
               </div>
             </div>
           </motion.div>

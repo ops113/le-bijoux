@@ -25,7 +25,7 @@ export const Logo = ({ variant = "dark", className = "" }: LogoProps) => {
       
       {/* Brand Name */}
       <div className={`mt-2 text-xs tracking-luxury uppercase font-light ${textColor}`}>
-        Le. Bijoux
+        Sumayah Marafi
       </div>
     </motion.div>
   );
@@ -42,7 +42,7 @@ export const LogoHorizontal = ({ variant = "dark", className = "" }: LogoProps) 
       transition={{ duration: 0.8 }}
     >
       <span className={`text-xl md:text-2xl font-display font-light tracking-elegant ${textColor}`}>
-        Le<span className="text-quicksand">.</span> Bijoux
+        Sumayah<span className="text-quicksand"> </span>Marafi
       </span>
     </motion.div>
   );

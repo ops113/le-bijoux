@@ -117,7 +117,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-xs text-muted-foreground font-light tracking-wide">
-            © 2025 Le. Bijoux. All rights reserved.
+            © 2025 Sumayah Marafi. All rights reserved.
           </p>
 
           {/* Legal Links */}
@@ -142,7 +142,7 @@ export const Footer = () => {
           className="py-8"
         >
           <p className="text-[8vw] md:text-[12vw] font-display font-light text-foreground text-center tracking-luxury whitespace-nowrap">
-            Le. Bijoux
+            Sumayah Marafi
           </p>
         </motion.div>
       </div>

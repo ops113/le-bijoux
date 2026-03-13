@@ -26,7 +26,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-ebony-clay/60 via-ebony-clay/40 to-ebony-clay/70 z-10" />
         <img
           src={heroImage}
-          alt="Le. Bijoux luxury jewelry"
+          alt="Sumayah Marafi luxury jewelry"
           className="w-full h-full object-cover object-center"
           loading="eager"
         />

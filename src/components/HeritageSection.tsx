@@ -29,7 +29,7 @@ export const HeritageSection = () => {
         >
           <img
             src={heritageImage}
-            alt="Le. Bijoux artisan atelier"
+            alt="Sumayah Marafi artisan atelier"
             className="w-full h-[120%] object-cover"
             loading="lazy"
           />

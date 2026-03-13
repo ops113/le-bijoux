@@ -99,13 +99,13 @@ export const PhilosophySection = () => {
 
           {/* Body Text */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="body-elegant text-muted-foreground max-w-2xl mx-auto mb-8"
-          >
-            At Le.Bijoux, jewelry is emotion made visible. We design with the psychology of jewelry in mind—color, words, and symbols that anchor how you want to feel today and who you are becoming tomorrow.
-          </motion.p>
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="body-elegant text-muted-foreground max-w-2xl mx-auto mb-8"
+        >
+          At Sumayah Marafi, jewelry is emotion made visible. We design with the psychology of jewelry in mind—color, words, and symbols that anchor how you want to feel today and who you are becoming tomorrow.
+        </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
