@@ -47,7 +47,7 @@ export const HeroSection = () => {
           <img 
             src={smLogo} 
             alt="SM Monogram" 
-            className="w-36 h-36 md:w-48 md:h-48 object-contain"
+            className="w-72 h-72 md:w-96 md:h-96 object-contain"
           />
         </motion.div>
 

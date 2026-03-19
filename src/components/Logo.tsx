@@ -20,7 +20,7 @@ export const Logo = ({ variant = "dark", className = "" }: LogoProps) => {
       <img 
         src={smLogo} 
         alt="SM Monogram" 
-        className="w-16 h-16 md:w-20 md:h-20 object-contain"
+        className="w-32 h-32 md:w-40 md:h-40 object-contain"
       />
       
       {/* Brand Name */}
