@@ -20,7 +20,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "Instagram", href: "#" },
+  { name: "Instagram", href: "https://www.instagram.com/le.bijoux.kw?igsh=djNvcjAzYnU1NGcz" },
   { name: "LinkedIn", href: "#" },
 ];
 
@@ -120,6 +120,8 @@ export const Footer = () => {
               <a
                 key={link.name}
                 href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="text-xs uppercase tracking-luxury text-muted-foreground hover:text-foreground transition-colors font-light"
               >
                 {link.name}

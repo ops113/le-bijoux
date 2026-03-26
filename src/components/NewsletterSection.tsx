@@ -7,13 +7,7 @@ export const NewsletterSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setIsSubmitted(true);
-    }
-  };
+  const handleLocalSubmit = () => setIsSubmitted(true);
 
   return (
     <section className="section-luxury bg-ebony-clay">
@@ -58,11 +52,15 @@ export const NewsletterSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}
-              onSubmit={handleSubmit}
+              action="https://formspree.io/f/mykbzgyk"
+              method="POST"
+              onSubmit={handleLocalSubmit}
               className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
             >
+              <input type="hidden" name="message" value="Private Access submission" />
               <input
                 type="email"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"

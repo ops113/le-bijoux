@@ -149,13 +149,13 @@ export default function Story() {
               </div>
 
               <div className="bg-gradient-to-br from-quicksand/60 via-shell-stone/25 to-quicksand/30 text-foreground border border-quicksand/40 p-8">
-                <h3 className="text-lg font-display font-light tracking-elegant text-swan-wing mb-4">
+                <h3 className="text-lg font-display font-light tracking-elegant text-ebony-clay mb-4">
                   Blood of My Blood
                 </h3>
-                <p className="body-elegant text-shell-stone/80 leading-relaxed mb-4">
+                <p className="body-elegant text-ebony-clay/80 leading-relaxed mb-4">
                   Born from the ruby stones gifted by Sumayah’s father, this signature collection invites you to bring in heirlooms, gemstones, or family treasures to be redesigned, reset, or reimagined into modern keepsakes.
                 </p>
-                <p className="body-elegant text-shell-stone/70 leading-relaxed mb-0">
+                <p className="body-elegant text-ebony-clay/70 leading-relaxed mb-0">
                   It is how we carry forward the stories, love, and energy of those who came before us—turning generational memories into pieces you can wear every day.
                 </p>
               </div>

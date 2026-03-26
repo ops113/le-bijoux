@@ -38,7 +38,7 @@ export const HeroSection = () => {
         className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6"
         style={{ opacity }}
       >
-        <div className="absolute top-24 md:top-28 right-6 md:right-12">
+        <div className="absolute top-20 md:top-28 right-4 md:right-12">
           <VoiceOverButton text="Wear Your Story. Jewellery with intention—crafted from personal stories, heirlooms and the women who wear them." className="bg-ebony-clay/40 text-shell-stone border-shell-stone/30 hover:text-swan-wing" />
         </div>
 
@@ -52,7 +52,7 @@ export const HeroSection = () => {
           <img 
             src={smLogo} 
             alt="SM Monogram" 
-            className="w-72 h-72 md:w-96 md:h-96 object-contain"
+            className="w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 object-contain"
           />
         </motion.div>
 
@@ -61,7 +61,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="heading-hero text-swan-wing max-w-4xl"
+          className="text-swan-wing font-display font-light tracking-[0.05em] leading-[1.05] whitespace-nowrap text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl"
         >
           Wear Your Story
         </motion.h1>
