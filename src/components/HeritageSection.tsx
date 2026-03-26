@@ -2,6 +2,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import heritageImage from "@/assets/earrings-emerald - 2.jpg";
+import { VoiceOverButton } from "@/components/VoiceOverButton";
 
 export const HeritageSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -57,10 +58,21 @@ export const HeritageSection = () => {
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className="heading-display text-swan-wing mb-8"
               >
-                A Legacy
-                <br />
-                <span className="text-quicksand">Reimagined</span>
+                A Legacy Reimagined
               </motion.h2>
+
+              <div className="mb-10 flex flex-col items-start gap-6">
+                <VoiceOverButton
+                  text="Founded in 2023. A legacy reimagined. Inspired by her grandmother and mother, Sumayah learned that jewellery is a daily expression of femininity and self-respect. A gift of red rubies from her father sparked our signature concept, Blood of My Blood, inviting you to bring heirlooms, gemstones and family treasures to be redesigned into new symbols you can wear every day."
+                  className="bg-ebony-clay/30 text-shell-stone border-shell-stone/30 hover:text-swan-wing"
+                />
+
+                <div className="w-40 md:w-48 aspect-[3/4] rounded-sm border border-shell-stone/30 bg-swan-wing/10 backdrop-blur-sm flex items-center justify-center">
+                  <span className="text-xs uppercase tracking-luxury text-shell-stone/70 font-light px-4 text-center">
+                    Portrait coming soon
+                  </span>
+                </div>
+              </div>
 
               <motion.div
                 initial={{ scaleX: 0, originX: 0 }}
@@ -75,7 +87,7 @@ export const HeritageSection = () => {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="body-elegant text-shell-stone mb-8"
               >
-                Inspired by her grandmother and mother, Sumayah learned that jewelry is a daily expression of femininity and self-respect. A gift of red rubies from her father sparked our signature concept, <em>Blood of My Blood</em>: inviting you to bring heirlooms, gemstones, and family treasures to be redesigned into new symbols you can wear every day.
+                Inspired by her grandmother and mother, Sumayah learned that jewellery is a daily expression of femininity and self-respect. A gift of red rubies from her father sparked our signature concept, <em>Blood of My Blood</em>: inviting you to bring heirlooms, gemstones and family treasures to be redesigned into new symbols you can wear every day.
               </motion.p>
 
               <motion.div

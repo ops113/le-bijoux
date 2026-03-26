@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { collectionItems, getImagesForSlug } from "@/lib/collections";
+import { VoiceOverButton } from "@/components/VoiceOverButton";
 
 type GalleryItem = (typeof collectionItems)[number] & { images: string[] };
 
@@ -61,8 +62,11 @@ export default function Collection() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="heading-hero text-foreground"
           >
-            The Collection
+            Curated Pieces
           </motion.h1>
+          <div className="mt-8 flex justify-center">
+            <VoiceOverButton text="Curated Pieces. A directory of previously customised work." />
+          </div>
           <motion.div
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}

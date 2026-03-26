@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import ringTourmaline from "@/assets/ring-tourmaline.jpg";
 import necklaceTanzanite from "@/assets/necklace-tanzanite.jpg";
 import earringsCluster from "@/assets/earrings-cluster.jpg";
+import { VoiceOverButton } from "@/components/VoiceOverButton";
 
 export default function Story() {
   return (
@@ -57,11 +58,14 @@ export default function Story() {
             transition={{ duration: 0.8 }}
             className="prose prose-lg mx-auto text-center"
           >
+            <div className="not-prose mb-10 flex justify-center">
+              <VoiceOverButton text="Our Story. Founded in 2023, Sumayah Marafi is an emotional, creative journey where every piece is infused with intention, memory and meaning. It began the day Sumayah realised that the joy she found customising her own jewellery could become a space for other women to wear their stories. Today, Sumayah Marafi stands for femininity with strength: personal adornments crafted to honour who you are and who you are becoming." />
+            </div>
             <p className="body-elegant text-muted-foreground leading-relaxed">
-              Founded in 2023, Sumayah Marafi is an emotional, creative journey where every piece is infused with intention, memory, and meaning. It began the day Sumayah realized that the joy she found customizing her own jewelry could become a space for other women to wear their stories.
+              Founded in 2023, Sumayah Marafi is an emotional, creative journey where every piece is infused with intention, memory and meaning. It began the day Sumayah realised that the joy she found customising her own jewellery could become a space for other women to wear their stories.
             </p>
             <p className="body-elegant text-muted-foreground leading-relaxed">
-              The name “Sumayah Marafi” is universal—a shared language for “jewel”—chosen for its elegant sound and the feeling it evokes: luxurious and poised. Inspired by her grandmother and mother, who taught her that jewelry is a daily ritual of femininity and self-respect, Sumayah believes a woman should always keep a piece of beauty close, even at home.
+              The name “Sumayah Marafi” is universal—a shared language for “jewel”—chosen for its elegant sound and the feeling it evokes: luxurious and poised. Inspired by her grandmother and mother, who taught her that jewellery is a daily ritual of femininity and self-respect, Sumayah believes a woman should always keep a piece of beauty close, even at home.
             </p>
             <p className="body-elegant text-muted-foreground leading-relaxed mb-0">
               Today, Sumayah Marafi stands for femininity with strength: personal adornments crafted to honor who you are and who you are becoming.
@@ -94,10 +98,10 @@ export default function Story() {
           >
             <h2 className="heading-section text-foreground text-center mb-8">Designing with Emotion</h2>
             <p className="body-elegant text-muted-foreground leading-relaxed mb-8">
-              Known to clients as a “jewelry therapist,” Sumayah designs with the psychology of jewelry—using color, words, and symbolism to capture how you want to feel. Each collection is guided by a curated calendar of themes such as love, rebirth, courage, and legacy.
+              Known to clients as a “jewellery therapist,” Sumayah designs with the psychology of jewellery—using colour, words and symbolism to capture how you want to feel. Each piece is guided by a curated calendar of themes such as love, rebirth, courage and legacy.
             </p>
             <p className="body-elegant text-muted-foreground leading-relaxed mb-8">
-              The process is deeply personal: from listening to your story, sketching by hand, and studying craftsmanship worldwide, to the moment you see your piece and recognize yourself in it. This is jewelry with intention—crafted to be worn every day, not kept in a box.
+              The process is deeply personal: from listening to your story, sketching by hand and studying craftsmanship worldwide, to the moment you see your piece and recognise yourself in it. This is jewellery with intention—crafted to be worn every day, not kept in a box.
             </p>
             <p className="body-elegant text-muted-foreground leading-relaxed mb-0">
               Sustainable luxury is our standard. We favor meaning over excess, encouraging clients to reuse, redesign, and revive what already holds history.
@@ -144,7 +148,7 @@ export default function Story() {
                 </ul>
               </div>
 
-              <div className="bg-ebony-clay/80 text-shell-stone border border-ebony-clay/40 p-8">
+              <div className="bg-gradient-to-br from-quicksand/60 via-shell-stone/25 to-quicksand/30 text-foreground border border-quicksand/40 p-8">
                 <h3 className="text-lg font-display font-light tracking-elegant text-swan-wing mb-4">
                   Blood of My Blood
                 </h3>
@@ -157,12 +161,12 @@ export default function Story() {
               </div>
             </div>
 
-            <div className="bg-shell-stone/40 border border-shell-stone/60 p-8 md:p-10">
-              <h3 className="text-lg font-display font-light tracking-elegant text-foreground mb-4">
+            <div className="bg-ebony-clay text-shell-stone border border-ebony-clay/40 p-8 md:p-10">
+              <h3 className="text-lg font-display font-light tracking-elegant text-swan-wing mb-4">
                 Brand Manifesto
               </h3>
-              <div className="space-y-3 text-muted-foreground">
-                <p>Jewelry is emotion made visible.</p>
+              <div className="space-y-3 text-shell-stone/80">
+                <p>Jewellery is emotion made visible.</p>
                 <p>Femininity is power—soft, elegant, intentional.</p>
                 <p>Every stone can hold a story; every symbol can anchor a feeling.</p>
                 <p>We honor lineage by reimagining heirlooms for the women of today.</p>

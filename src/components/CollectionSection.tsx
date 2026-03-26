@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { collectionItems, getImagesForSlug } from "@/lib/collections";
+import { VoiceOverButton } from "@/components/VoiceOverButton";
 
 const featuredSlugs = ["necklace-butterfly", "earrings-emerald", "ring-sapphire"];
 
@@ -49,7 +50,7 @@ const CollectionCard = ({
       <div className="image-luxury aspect-[3/4] mb-6 bg-shell-stone">
         <img
           src={item.images[0]}
-          alt={`${item.name} collection`}
+          alt={`${item.name} bespoke piece`}
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -106,8 +107,21 @@ export const CollectionSection = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="heading-display text-foreground"
             >
-              The Collection
+              Curated Pieces
             </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.18 }}
+              className="body-elegant text-muted-foreground max-w-2xl mx-auto mt-6"
+            >
+              A selection of previously customised work, created one-to-one and shaped by personal stories.
+            </motion.p>
+
+            <div className="mt-8 flex justify-center">
+              <VoiceOverButton text="Curated Pieces. A selection of previously customised work, created one-to-one and shaped by personal stories." />
+            </div>
 
             <motion.div
               initial={{ scaleX: 0 }}
@@ -133,7 +147,7 @@ export const CollectionSection = () => {
             className="text-center mt-16 md:mt-24"
           >
             <Link to="/collection" className="btn-luxury-outline">
-              View All Collections
+              View All Pieces
             </Link>
           </motion.div>
         </div>

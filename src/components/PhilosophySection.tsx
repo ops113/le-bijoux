@@ -8,6 +8,7 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import { VoiceOverButton } from "@/components/VoiceOverButton";
 
 const values = [
   { title: "Femininity with Strength", description: "Beauty as a daily ritual of confidence." },
@@ -84,10 +85,12 @@ export const PhilosophySection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="heading-display text-foreground mb-8"
           >
-            Jewelry with
-            <br />
-            <span className="text-quicksand">Intention & Meaning</span>
+            <span className="text-quicksand">Jewellery</span> with Intention & Meaning
           </motion.h2>
+
+          <div className="mb-10 flex justify-center">
+            <VoiceOverButton text="Our Philosophy. Jewellery with intention and meaning. At Sumayah Marafi, jewellery is emotion made visible. We design with the psychology of jewellery in mind—colour, words and symbols that anchor how you want to feel today and who you are becoming tomorrow. We design with you: heirlooms revived, personal mantras embedded, femininity honoured as power. It is sustainable luxury—meaning over excess, intention over trend." />
+          </div>
 
           {/* Divider */}
           <motion.div
@@ -104,7 +107,7 @@ export const PhilosophySection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="body-elegant text-muted-foreground max-w-2xl mx-auto mb-8"
         >
-          At Sumayah Marafi, jewelry is emotion made visible. We design with the psychology of jewelry in mind—color, words, and symbols that anchor how you want to feel today and who you are becoming tomorrow.
+          At Sumayah Marafi, jewellery is emotion made visible. We design with the psychology of jewellery in mind—colour, words and symbols that anchor how you want to feel today and who you are becoming tomorrow.
         </motion.p>
 
           <motion.p
@@ -113,7 +116,7 @@ export const PhilosophySection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="body-elegant text-muted-foreground max-w-2xl mx-auto mb-16"
           >
-            We design with you: heirlooms revived, personal mantras embedded, femininity honored as power. It is sustainable luxury—meaning over excess, intention over trend.
+            We design with you: heirlooms revived, personal mantras embedded, femininity honoured as power. It is sustainable luxury—meaning over excess, intention over trend.
           </motion.p>
 
           {/* Values Carousel */}

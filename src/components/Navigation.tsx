@@ -4,7 +4,7 @@ import { LogoHorizontal } from "./Logo";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Collection", href: "#collection" },
+  { name: "Intentional Pieces", href: "#collection" },
   { name: "Maison", href: "#maison" },
   { name: "Heritage", href: "#heritage" },
   { name: "Contact", href: "#contact" },

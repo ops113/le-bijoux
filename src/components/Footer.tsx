@@ -3,7 +3,7 @@ import { Logo } from "./Logo";
 
 const footerLinks = {
   explore: [
-    { name: "Collections", href: "#collection" },
+    { name: "Curated Pieces", href: "#collection" },
     { name: "New Arrivals", href: "#" },
     { name: "Bespoke", href: "#" },
   ],
@@ -21,7 +21,6 @@ const footerLinks = {
 
 const socialLinks = [
   { name: "Instagram", href: "#" },
-  { name: "Pinterest", href: "#" },
   { name: "LinkedIn", href: "#" },
 ];
 
@@ -35,8 +34,21 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <Logo variant="dark" className="mb-6" />
             <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-sm mt-8">
-              Jewelry with intention—personal, feminine, and deeply connected to the stories and heirlooms of the women who wear it.
+              Jewellery with intention—personal, feminine and deeply connected to the stories and heirlooms of the women who wear it.
             </p>
+
+            <div className="mt-8 space-y-2 text-sm text-muted-foreground font-light tracking-wide">
+              <p>
+                <span className="text-foreground/80">Phone:</span>{" "}
+                <a className="hover:text-foreground transition-colors" href="tel:+96550344540">
+                  +965 50344540
+                </a>
+              </p>
+              <p>
+                <span className="text-foreground/80">Email:</span>{" "}
+                <span className="text-muted-foreground">To be added</span>
+              </p>
+            </div>
           </div>
 
           {/* Explore */}
@@ -142,7 +154,7 @@ export const Footer = () => {
           className="py-8"
         >
           <p className="text-[8vw] md:text-[12vw] font-display font-light text-foreground text-center tracking-luxury whitespace-nowrap">
-            Sumayah Marafi
+            SM Fine Jewellery
           </p>
         </motion.div>
       </div>

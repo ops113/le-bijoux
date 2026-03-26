@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import heroImage from "@/assets/necklace-pear-sapphire.jpg";
 import smLogo from "@/assets/sm-logo.png";
+import { VoiceOverButton } from "@/components/VoiceOverButton";
 
 export const HeroSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -26,7 +27,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-ebony-clay/60 via-ebony-clay/40 to-ebony-clay/70 z-10" />
         <img
           src={heroImage}
-          alt="Sumayah Marafi luxury jewelry"
+          alt="Sumayah Marafi luxury jewellery"
           className="w-full h-full object-cover object-center"
           loading="eager"
         />
@@ -37,6 +38,10 @@ export const HeroSection = () => {
         className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6"
         style={{ opacity }}
       >
+        <div className="absolute top-24 md:top-28 right-6 md:right-12">
+          <VoiceOverButton text="Wear Your Story. Jewellery with intention—crafted from personal stories, heirlooms and the women who wear them." className="bg-ebony-clay/40 text-shell-stone border-shell-stone/30 hover:text-swan-wing" />
+        </div>
+
         {/* Monogram */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -67,7 +72,7 @@ export const HeroSection = () => {
           transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mt-6 subheading-luxury text-shell-stone max-w-xl"
         >
-          Jewelry with intention—crafted from personal stories, heirlooms, and the women who wear them.
+          Jewellery with intention—crafted from personal stories, heirlooms and the women who wear them.
         </motion.p>
 
         {/* Scroll Indicator */}

@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import { VoiceOverButton } from "@/components/VoiceOverButton";
 
 export const NewsletterSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -36,14 +37,20 @@ export const NewsletterSection = () => {
             Be the First to Know
           </motion.h2>
 
+          <div className="mb-8 flex justify-center">
+            <VoiceOverButton
+              text="Private Access. Be the first to know. Receive exclusive invitations to private viewings, new previews and the stories behind our craft. We respect your privacy."
+              className="bg-ebony-clay/40 text-shell-stone border-shell-stone/30 hover:text-swan-wing"
+            />
+          </div>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="body-elegant text-shell-stone/80 mb-12"
           >
-            Receive exclusive invitations to private viewings, 
-            new collection previews, and the stories behind our craft.
+            Receive exclusive invitations to private viewings, new previews and the stories behind our craft.
           </motion.p>
 
           {!isSubmitted ? (
@@ -91,7 +98,7 @@ export const NewsletterSection = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-xs text-shell-stone/40 mt-8"
           >
-            We respect your privacy. Unsubscribe at any time.
+            We respect your privacy.
           </motion.p>
         </div>
       </div>
